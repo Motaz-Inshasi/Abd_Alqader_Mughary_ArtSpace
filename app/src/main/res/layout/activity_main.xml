@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="1/6"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgArtwork"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:elevation="12dp"
+            android:padding="24dp"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Artwork image" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ECEBF4"
+        android:padding="16dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="26sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#1C1B1F" />
+
+        <TextView
+            android:id="@+id/tvArtistYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist (Year)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1C1B1F" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="16dp"
+            android:text="Previous"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="Next" />
+    </LinearLayout>
+</LinearLayout>
